@@ -1,0 +1,633 @@
+/*Navigation part*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(90deg, rgba(21,8,240,1) 0%, rgba(0,190,175,1) 0%, rgba(3,203,193,1) 100%);
+    margin: 0;
+    padding: 0;
+}
+::selection {
+    background-color: lime;
+    color: white;
+}
+
+#navigation {
+    display: flex;
+    border-bottom: 1px solid #aaa;
+    box-shadow: 0px 6px 20px #aaa;
+    padding: 30px;
+    box-sizing: border-box;
+    z-index: +1;
+    background-color: whitesmoke;
+}
+
+#laundry_home {
+    flex-basis: 58%;
+    padding-left: 35px;
+}
+
+#laundry_home #laun {
+    color: black;
+    font-size: 25px;
+    font-family: 'Merriweather Sans';
+    letter-spacing: 1.7px;
+    word-spacing: 2px;
+    font-weight: bold;
+}
+
+#land, #price, #home, #about, #services, #contact, #shopcart {
+    flex-basis: 6%;
+    padding-top: 10px;
+}
+
+#navigation div a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+/*Row2*/
+.row2 {
+    display: flex;
+}
+
+/*Left Container*/
+.left_service {
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    flex-basis: 50%;
+    height: 700px;
+    z-index: +1;
+    padding-left: 50px;
+    padding-top: 40px;
+    box-shadow: 0 5px 20px rgb(221, 221, 240);
+}
+
+#laundry {
+    display: inline-block;
+    max-width: 20px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.left_service .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 2px;
+    grid-row-gap: 25px;
+}
+
+.grid1 p, .grid2 p, .grid3 p, .grid4 p, .grid5 p {
+    display: inline-block;
+    max-width: 160px;
+    font-family: 'Merriweather Sans';
+    font-weight: lighter;
+    line-height: 18px;
+    font-size: 15px;
+}
+
+.grid1 h3 a, .grid2 h3 a, .grid3 h3 a, .grid4 h3 a, .grid5 h3 a {
+    font-family:'Montserrat';
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#all_service {
+    background-color: rgba(255, 145, 129, 1);
+    display: inline-block;
+    border-radius: 35px;
+    height: 50px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1.5s;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    word-spacing: 4px;
+}
+
+#all_service:hover {
+    background-color: rgb(139, 160, 255);
+}
+
+
+/*Towel*/
+.towel {
+    position: relative;
+    flex-basis: 50%;
+    height: 500px;
+}
+
+.towel #towel_img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/*3rd Row*/
+/*Call us*/
+.call_us {
+    height: 900px;
+    background: linear-gradient(90deg, rgba(21,8,240,1) 0%, rgba(0,190,175,1) 0%, rgba(3,203,193,1) 100%);
+    transform: translate(0, -200px);
+    position: relative;
+}
+
+div.call {
+    position: absolute;
+    box-sizing: border-box;
+    right: 0;
+    width: 50%;
+    height: 26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#call_child {
+    position: relative;
+    line-height: 60px;
+}
+#call_child #p1 {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    color: whitesmoke;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#call_child #p2 {
+    color: rgb(10, 23, 70);
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+.call div p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+/*Easy_way laundry*/
+.easy_way {
+    position: absolute;
+    top: 35%;
+    left: 18%;
+    right: 18%;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.easy_way h3 {
+    text-align: center;
+    font-size: 35px;
+}
+.easy_way #easy_p1 {
+    text-align: center;
+}
+
+.easy_way #easy_p2 {
+    text-align: center;
+}
+
+.easy_way #easy_p3 {
+    text-align: center;
+}
+
+.easy_way #easy_p1, .easy_way #easy_p2,.easy_way #easy_p3 {
+    line-height: 30px;
+}
+
+/*Schedule*/
+.schedule {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    left: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    height: 200px;
+}
+
+.schedule_grd1, .schedule_grd2, .schedule_grd3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.schedule_grd1 div, .schedule_grd2 div, .schedule_grd3 div{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule_grd1 div i, .schedule_grd2 div i, .schedule_grd3 div i {
+    font-size: 30px;
+    color: lightcoral;
+}
+
+.schedule_grd4, .schedule_grd5, .schedule_grd6 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.schedule_grd1 img {
+    height: 50%;
+    width: 50%;
+}
+
+/*Pick Button*/
+.pick_but {
+    position: absolute;
+    top: 95%;
+    left: 39%;
+    right: 39%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+    transition: all 1.5s;
+    text-decoration: none;
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.pick_but:hover {
+    background-color: black;
+}
+
+
+/*4th Row*/
+.row4 {
+    box-shadow: 0px -5px 10px #aaa;
+    background-color: whitesmoke;
+    display: flex;
+    position: relative;
+}
+.ten_perc, .satisfac {
+    height: 800px;
+}
+
+/*Left*/
+.ten_perc {
+    background-color: whitesmoke;
+    flex-basis: 50%;
+    position: relative;
+    box-sizing: border-box;
+    border-bottom-right-radius: 25%;
+}
+
+.ten_perc .tile1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 52.8%;
+}
+
+.tile1 #hang_clothes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.ten_perc .tile2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 47%;
+}
+
+.tile2 .main_circle {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 30%;
+    height: 100px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tile2 .main_circle .circle {
+    display: inline-block;
+    position: absolute;
+    left: 35%;
+    right: 20%;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(90deg, rgba(21,8,240,1) 0%, rgba(0,190,175,1) 0%, rgba(3,203,193,1) 100%);
+    border-radius: 50%;
+}
+.circle p {
+    padding-top: 10px;
+    color: white;
+}
+
+.ten_perc .tile3 {
+    background-color: lightcoral;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 41%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 1.3s;
+}
+
+.ten_perc .tile3:hover {
+    background-color: coral;
+}
+
+.tile3 .discount {
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.getdeal {
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1.5s;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 1.5s;
+}
+
+.getdeal:hover, .getdeal a:hover {
+    background-color: rgb(139, 160, 255);
+    color: white;
+}
+
+.ten_perc .tile4 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 59%;
+    border-bottom-right-radius: 25%;
+}
+
+.tile4 #hang_clothes2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 25%
+}
+
+/*Right*/
+.satisfac {
+    box-sizing: border-box;
+    flex-basis: 50%;
+    background-color: whitesmoke;
+    padding-left: 6%;
+    padding-top: 5%;
+}
+
+.satisfac h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.satisfac #rightlist {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 30px;
+}
+
+#list1, #list2, #list3 {
+    max-width: 550px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.satisfac .start {
+    background-color: rgba(255, 145, 129, 1);
+    display: inline-block;
+    border-radius: 35px;
+    height: 50px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1.5s;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    word-spacing: 4px;
+}
+
+.satisfac .start:hover {
+    background-color: rgb(139, 160, 255);
+}
+
+#head1, #head2, #head3 {
+    font-size: 20px;
+}
+
+/*Row 5*/
+.row_five {
+    background-color: lightcoral;
+    height: 700px;
+    position: relative;
+    box-shadow: 0px -4px 8px lightcoral;
+}
+
+.row_five .laststmnt {
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    left: 20%;
+    right: 20%;
+    height: 180px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    color: white;
+}
+.laststmnt .lastcircle {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.laststmnt .lastcircle p {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 2px;
+    color: lightcoral;
+    font-weight: bold;
+}
+
+.row_five .bottombox {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    box-sizing: border-box;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    height: 45%;
+    width: 42%;
+    border-top-left-radius: 100px;
+    box-shadow: -3px -3px 5px white;
+}
+
+.bottombox h2 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: darkblue;
+}
+.bottombox p {
+    position: absolute;
+    top: 35%;
+    background-color: rgb(238, 233, 233);
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 50px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color:coral;
+    border-radius: 20px;
+    transition: all 1.5s;
+}
+
+.bottombox .join_now {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 50px;
+    background-color: rgb(14, 231, 213);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    border-radius: 20px;
+    transition: all 1.5s;
+}
+
+.bottombox p:hover, .bottombox .join_now:hover  {
+    background-color: rgb(139, 160, 255);
+    color: white;   
+}
+
+/*Divil*/
+.divil {
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    display: inline-block;
+    max-width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    letter-spacing: 1.2px;
+}
+
+.divil h2 {
+    font-size: 30px;
+}
+.divil p {
+    font-size: 15px;
+}
+
+/*Social Media*/
+.connect {
+    position: absolute;
+    top: 53%;
+    left: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 120px;
+    width: 200px;
+}
+
+.connect .con {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    color: white;
+}
+
+.connect .fb {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect .fb a, .connect .insta a, .connect .twit a{
+    font-size: 30px;
+    color: white;
+}
+
+.connect .twit {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect .insta {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
