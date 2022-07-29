@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Banteilang Mukhim-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="https://images.unsplash.com/photo-1503455637927-730bce8583c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YW5pbWF0aW9ucyUyMGNvbG91cnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <title>Module 9</title>
+    </head>
+
+    <body>
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-expand-lg bg-light container-fluid">
+            <div class="container-fluid mt-2 fs-5">
+               <!--Brand Picture-->
+              <a class="navbar-brand" href="#"><img src="https://codescandy.com/geeks-bootstrap-5/assets/images/brand/logo/logo.svg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!--Navigation Items-->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-25">
+                    <!--Browse Item-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Browse
+                    </a>
+                    <!--items under browse-->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li class="dropend">
+                            <a class="dropdown-item dropdown-list-group-item dropdown-toggle" id="dropdownMenuButton1" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-labelledby="navbarDropdown">
+                                Web Development
+                            </a>
+                            <!--Items under webdev-->
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">React</a></li>
+                                <li><a class="dropdown-item" href="#">BootStrap</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropend">
+                            <a class="dropdown-item btn btn-primary dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                                Design
+                            </a>
+                            <!--Items under design-->
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Graphic</a></li>
+                                <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
+                                <li><a class="dropdown-item" href="#">Sketch</a></li>
+                                <li><a class="dropdown-item" href="#">Icon</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Marketting</a></li>
+                        <li><a class="dropdown-item" href="#">Mobile App</a></li>
+                        <li><a class="dropdown-item" href="#">IT Software</a></li>
+                    </ul>
+                  </li>
+                  <!--Landings Item-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Landings
+                    </a>
+                    <!--Items under Landings-->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="nav-link disabled text-uppercase" href="#" style="font-size:13px; padding-left: 16px;">landings</a></li>
+                        <li><a class="dropdown-item" href="#">Course</a></li>
+                        <li><a class="dropdown-item" href="#">Lead Course</a></li>
+                    </ul>
+                  </li>
+                  <!--Pages-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </a>
+                    <!--Items Under Pages-->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li class="dropend">
+                            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                            </a>
+                            <!--Items under courses-->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="">Course Single</a></li>
+                                <li><a class="dropdown-item" href="#">Course Resume</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropend">
+                            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Paths
+                            </a>
+                            <!--Items under Paths-->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="">Browse Path</a></li>
+                                <li><a class="dropdown-item" href="#">Path Single</a></li>
+                            </ul>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">About</a></li>
+                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                        <li><a class="dropdown-item" href="#">Help Center</a></li>
+                    </ul>
+                  </li>
+                  <!--Accounts-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Accounts
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="nav-link disabled dropdown-item text-uppercase" style="font-size:13px; padding-left: 16px;" href="#">accounts</a></li>
+                      <li><a class=" dropdown-item" href="#">Instructor</a></li>
+                      <li><a class="dropdown-item" href="#">Student</a></li>
+                      <li><a class="dropdown-item" href="#">Admin</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Sign In</a></li>
+                      <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                      <li><a class="dropdown-item" href="#">Forgot Password</a></li>
+                    </ul>
+                  </li>
+                  <!--...-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Others
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                Documentation
+                                <p class="text-muted fw-light" >Browse all the Documentation</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                Changelog
+                                <p class="text-muted fw-light">See what's new</p>
+                            </a>
+                        </li>
+                    </ul>
+                  </li>
+                </ul>
+                <!--Search-->
+                <form class="d-flex align-items-center" role="search">
+                    <input class="form-control ps-6 me-2" type="search" placeholder="Search Courses" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+          <!--Hero Section-->
+          <!--Geeks UI-->
+          <div class="container-fluid pt-5 pb-5" style="background-color: #5816c3;">
+            <div class="container bd-indigo-400">
+                <div class="row h-100">
+                    <div class="col-lg-5 col-md-8 d-inline-block h-50 ps-5">
+                        <h1 class="text-white fs-1 text-capitalize fw-bold" style="max-width: 500px;">Welcome to geeks UI Learning Application</h1>
+                        <p class="text-white-50 fs-4" style="max-width: 450px;">Hand-picked Instructor and expertly crafted courses, designed for the modern students and entrepreneur.</p>
+                        <div class="d-grid gap-2 d-md-block">
+                            <a class="btn btn-success text-capitalize" href="#">browse course</a>
+                            <a class="btn btn-light text-capitalize" href="#">are you instructor?</a> 
+                        </div>
+                    </div>
+                    <div class="col-7"></div>
+                </div>
+              </div>
+          </div>
+
+          <!--Online Courses-->
+            <div class="shadow-sm container-fluid border border-bottom-4 border-bottom-light pt-3 pb-3">
+                <div class="row h-100 lh-lg-1 lh-md-0 pt-3 ps-5 fs-5">
+                    <div class="col-lg d-md-none d-lg-block"></div>
+                    <div class="col-lg-3  fw-semibold">
+                        <p>30,000 online courses</p>
+                        <p class="fw-light">Enjoy a variety of fresh topics</p> 
+                    </div>
+                    <div class="col-lg-3 fw-semibold">
+                        <p>Expert Instruction</p>
+                        <p class="fw-light">Find the right instructor for you</p> 
+                    </div>
+                    <div class="col-lg-3 fw-semibold">
+                        <p>Lifetime Access</p>
+                        <p class="fw-light">Learn on your schedule</p>
+                    </div>
+                    <div class="col-lg d-md-none d-lg-block"></div>
+                </div>
+            </div>
+
+            <!--Cards-->
+            <!--Recommended to you-->
+            <div class="pt-5 pb-3">
+                <div class="container-md">
+                    <div class="row">
+                        <div class="col fs-3 mt-4 fw-semibold text-md-center text-lg-start pb-md-3">Recommended to you</div>
+                    </div>
+                     <!--cards-->
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 px-md-0">
+                            <div class="card rounded-2 w-md-90 w-sm-100" style="width:20rem;"><!--Graph-->
+                                <a href="#"><img class="rounded-top card-img-top" src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-graphql.jpg" alt="connect to internet for image"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title text-capitalize"><a class="text-black" href="#" style="text-decoration: none;">GraphQL - Introduction to GraphQL for beginers</a></h3>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="fa fa-clock-o"></i></span>
+                                        <p class="w-25 text-center">2 hr 46m </p>
+                                        <p class="w-50 text-center">Advance</p>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <p>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                        </p>
+                                        <p class="text-warning">4.5</p>
+                                        <p class="fs-6 text-muted">(8,200)</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Ted Hawkins
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 px-md-0">
+                            <div class="card rounded w-md-90 w-sm-100" style="width:20rem;"><!--Angular-->
+                                <a href="#"><img class="rounded-top card-img-top" src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-angular.jpg" alt="connect to internet for image"></a>
+                                <div class="card-body">
+                                    <a class="text-black" href="#" style="text-decoration: none;"><h5 class="card-title text-capitalize">Angular - the complete guide for beginner</h3></a>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="fa fa-clock-o"></i></span>
+                                        <p class="w-25 text-center">1 hr 30m </p>
+                                        <p class="w-50 text-center">Beginner</p>
+                                    </div>  
+                                    <div class="d-flex flex-row">
+                                        <p>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                        </p>
+                                        <p class="text-warning">4.5</p>
+                                        <p class="fs-6 text-muted">(14,200)</p>
+                                    </div> 
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Juanita Bell
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 px-md-0">
+                            <div class="card rounded-2 w-md-90 w-sm-100" style="width:20rem;"><!--python-->
+                                <a href="#"><img class="rounded-top card-img-top" src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-python.jpg" alt="connect to internet for image"></a> 
+                                <div class="card-body">
+                                    <a class="text-black" href="#" style="text-decoration: none;"><h5 class="card-title text-capitalize">The Python Course - build web application</h5></a>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="fa fa-clock-o"></i></span>
+                                        <p class="w-25 text-center">2 hr 30m </p>
+                                        <p class="w-50 text-center">Intermediate</p>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <p>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                        </p>
+                                        <p class="text-warning">4.5</p>
+                                        <p class="fs-6 text-muted">(10,200)</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Claire Robertson
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 px-md-0">
+                            <div class="card rounded-2 w-md-90 w-sm-100" style="width:20rem;"><!--Graph-->
+                                <a href="#"><img class="rounded-top card-img-top" src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-graphql.jpg" alt="connect to internet for image"></a>
+                                <div class="card-body">
+                                    <a class="text-black" href="#" style="text-decoration: none;"><h5 class="card-title text-capitalize">GraphQL - Introduction to GraphQL for beginers</h3></a>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="fa fa-clock-o"></i></span>
+                                        <p class="w-25 text-center">2 hr 46m </p>
+                                        <p class="w-50 text-center">Beginner</p>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <p>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                        </p>
+                                        <p class="text-warning">4.5</p>
+                                        <p class="fs-6 text-muted">(8,200)</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Ted Hawkins
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Most Popular-->
+            <div class="pt-5 pb-3 shadow-bottom-sm">
+                <div class="container-md">
+                    <div class="row">
+                        <div class="col fs-3 mt-4 fw-semibold text-md-center text-lg-start pb-md-3">Most Popular</div>
+                    </div>
+                     <!--cards-->
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card rounded-2 w-md-90 w-sm-100" style="width:20rem;"><!--CSS3-->
+                                <a href="#"><img class="rounded-top card-img-top" src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-css.jpg" alt="connect to internet for image"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title text-capitalize"><a class="text-black" href="#" style="text-decoration: none;">CSS - ultimate CSS course from beginner to advance</a></h3>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="fa fa-clock-o"></i></span>
+                                        <p class="w-25 text-center">2 hr 46m </p>
+                                        <p class="w-50 text-center">Advance</p>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <p>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                        </p>
+                                        <p class="text-warning">4.5</p>
+                                        <p class="fs-6 text-muted">(18,200)</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Juanita Bell
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card rounded w-md-90 w-sm-100" style="width:20rem;"><!--WordPress-->
+                                <a href="#"><img class="rounded-top card-img-top" src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-wordpress.jpg" alt="connect to internet for image"></a>
+                                <div class="card-body">
+                                    <a class="text-black" href="#" style="text-decoration: none;"><h5 class="card-title text-capitalize">Wordpress: complete WordPress theme & plugin</h3></a>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="fa fa-clock-o"></i></span>
+                                        <p class="w-25 text-center">1 hr 30m </p>
+                                        <p class="w-50 text-center">Beginner</p>
+                                    </div>  
+                                    <div class="d-flex flex-row">
+                                        <p>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                        </p>
+                                        <p class="text-warning">4.5</p>
+                                        <p class="fs-6 text-muted">(9,230)</p>
+                                    </div> 
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Claire Robertson
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card rounded-2 w-md-90 w-sm-100" style="width:20rem;"><!--javaScript-->
+                                <a href="#"><img class="rounded-top card-img-top" src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-javascript.jpg" alt="connect to internet for image"></a> 
+                                <div class="card-body">
+                                    <a class="text-black" href="#" style="text-decoration: none;"><h5 class="card-title text-capitalize">Getting Started with javascript</h5></a>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="fa fa-clock-o"></i></span>
+                                        <p class="w-25 text-center">2 hr 30m </p>
+                                        <p class="w-50 text-center">Intermediate</p>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <p>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                        </p>
+                                        <p class="text-warning">4.5</p>
+                                        <p class="fs-6 text-muted">(15,230)</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Ted Hawkins
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card rounded-2 w-md-90 w-sm-100" style="width:20rem;"><!--CSS3-->
+                                <a href="#"><img class="rounded-top card-img-top" src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-css.jpg" alt="connect to internet for image"></a>
+                                <div class="card-body">
+                                    <a class="text-black" href="#" style="text-decoration: none;"><h5 class="card-title text-capitalize">CSS - ultimate CSS course from beginner to advance</h3></a>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="fa fa-clock-o"></i></span>
+                                        <p class="w-25 text-center">2 hr 46m </p>
+                                        <p class="w-50 text-center">Beginner</p>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <p>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                        </p>
+                                        <p class="text-warning">4.5</p>
+                                        <p class="fs-6 text-muted">(18,200)</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Juanita Bell
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Trending-->
+            <div class="pt-5 pb-5 shadow-sm">
+                <div class="container-md">
+                    <div class="row">
+                        <div class="col fs-3 mt-4 fw-semibold text-md-center text-lg-start pb-md-3">Trending</div>
+                    </div>
+                     <!--cards-->
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card rounded-2 w-md-90 w-sm-100" style="width:20rem;"><!--Graph-->
+                                <a href="#"><img class="rounded-top card-img-top" src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-graphql.jpg" alt="connect to internet for image"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title text-capitalize"><a class="text-black" href="#" style="text-decoration: none;">GraphQL - Introduction to GraphQL for beginers</a></h3>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="fa fa-clock-o"></i></span>
+                                        <p class="w-25 text-center">2 hr 46m </p>
+                                        <p class="w-50 text-center">Advance</p>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <p>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                        </p>
+                                        <p class="text-warning">4.5</p>
+                                        <p class="fs-6 text-muted">(8,200)</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Ted Hawkins
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card rounded w-md-90 w-sm-100" style="width:20rem;"><!--Angular-->
+                                <a href="#"><img class="rounded-top card-img-top" src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-angular.jpg" alt="connect to internet for image"></a>
+                                <div class="card-body">
+                                    <a class="text-black" href="#" style="text-decoration: none;"><h5 class="card-title text-capitalize">Angular - the complete guide for beginner</h3></a>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="fa fa-clock-o"></i></span>
+                                        <p class="w-25 text-center">1 hr 30m </p>
+                                        <p class="w-50 text-center">Beginner</p>
+                                    </div>  
+                                    <div class="d-flex flex-row">
+                                        <p>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                        </p>
+                                        <p class="text-warning">4.5</p>
+                                        <p class="fs-6 text-muted">(14,200)</p>
+                                    </div> 
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Juanita Bell
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card rounded-2 w-md-90 w-sm-100" style="width:20rem;"><!--python-->
+                                <a href="#"><img class="rounded-top card-img-top" src="https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-python.jpg" alt="connect to internet for image"></a> 
+                                <div class="card-body">
+                                    <a class="text-black" href="#" style="text-decoration: none;"><h5 class="card-title text-capitalize">The Python Course - build web application</h5></a>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="fa fa-clock-o"></i></span>
+                                        <p class="w-25 text-center">2 hr 30m </p>
+                                        <p class="w-50 text-center">Intermediate</p>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <p>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                        </p>
+                                        <p class="text-warning">4.5</p>
+                                        <p class="fs-6 text-muted">(10,200)</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Claire Robertson
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card rounded-2 w-md-90 w-sm-100" style="width:20rem;"><!--React-->
+                                <a href="#"><img class="rounded-top card-img-top" src="	https://codescandy.com/geeks-bootstrap-5/assets/images/course/course-react.jpg" alt="connect to internet for image"></a>
+                                <div class="card-body">
+                                    <a class="text-black" href="#" style="text-decoration: none;"><h5 class="card-title text-capitalize">How to easily create a website with React</h3></a>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="fa fa-clock-o"></i></span>
+                                        <p class="w-25 text-center">2 hr 46m </p>
+                                        <p class="w-50 text-center">Beginner</p>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <p>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                            <span class="fa fa-star checked text-warning"></span>
+                                        </p>
+                                        <p class="text-warning">4.5</p>
+                                        <p class="fs-6 text-muted">(8,200)</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Morris Mccoy
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Footer-->
+            <div>
+                <div class="container pt-3 pb-3">
+                    <div class="row text-muted fw-light">
+                        <div class="col-lg-8 col-sm-12">&copy;July 2022 Geeks. All Rights Reserved</div>
+                        <div class="col-lg-1 col-sm-12"><a class="text-black text-decoration-none" href="#">Privacy</a> </div>
+                        <div class="col-lg-1 col-sm-12"><a class="text-black text-decoration-none" href="#">Terms</a></div>
+                        <div class="col-lg-1 col-sm-12"><a class="text-black text-decoration-none" href="#">Feedback</a> </div>
+                        <div class="col-lg-1 col-sm-12"><a class="text-black text-decoration-none" href="#">Support</a></div>
+                    </div>
+                </div>
+            </div>
+        
+        <!--JavaScript-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>
